@@ -1,0 +1,103 @@
+:root {
+    --bg-color: #1a1a1a;
+    --text-color: #e0e0e0;
+    --accent-color: #4da6ff;
+    --sidebar-bg: #2c2c2c;
+    --hover-color: #3a3a3a;
+    --button-bg: #4da6ff;
+    --button-bg-hover: #3a8cd1;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: var(--sidebar-bg);
+    padding: 10px;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+}
+
+
+
+.content {
+    flex-grow: 1;
+    padding: 10px;
+    margin-left: 250px;
+    max-width: 800px;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    color: var(--accent-color);
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+button {
+    background-color: var(--button-bg);
+    color: var(--text-color);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: left;
+}
+
+button:hover {
+    background-color: var(--button-bg-hover);
+}
+
+.code-block {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 15px;
+    overflow-x: auto;
+    border: 1px solid #dee2e6;
+}
+
+.code-block pre {
+    margin: 0;
+}
+
+.code-block code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #212529;
+}
+
+.additional-resources a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.additional-resources a:hover {
+    text-decoration: underline;
+}
+
+
+img {
+    margin: 15px; 
+    display: block;
+}
